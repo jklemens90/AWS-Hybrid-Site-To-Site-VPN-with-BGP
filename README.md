@@ -20,6 +20,7 @@ In the last stage, I added the BGP sessions over all the tunnels. This allowed t
 Below are pictures and proof that the IPsec tunnels were established correctly:
 
 On-Premise Router 1-
+
 ![onpremrouter 1 final route table](https://user-images.githubusercontent.com/95970840/220513969-13379fb0-4e1d-421d-b51c-3ce442693daa.png)
 
 "C" next to an IP address means it's a route that is connected to this particular operating system.
@@ -27,14 +28,17 @@ On-Premise Router 1-
 10.16.0.0/16 (AWS) was learned via both vti1 and vti2 (IPsec tunnels). 
 
 On-Premise Router 2- 
+
 ![onpremrouter 2 final route table](https://user-images.githubusercontent.com/95970840/220514477-8fa02717-ca2f-452f-929e-b6ab8dfe3623.png)
 
 10.16.0.0/16 (AWS) was learned via both vti1 and vti2 (IPsec tunnels) in this scenario as well. 
 
 On-premise to EC2-A ping response
+
 ![ping response on-prem to EC2-A](https://user-images.githubusercontent.com/95970840/220515187-6260b498-7c2a-4396-b527-41f4661be4e0.png)
 
 EC2-A to on-premise ping response
+
 ![ping response EC2-A to on prem](https://user-images.githubusercontent.com/95970840/220515276-cb6a3a6f-ae5f-4323-9496-7bb5d8405c65.png)
 
 I was able to implement a highly available VPN architecture that can survive the failure of an Availability Zone at the AWS side or the failure of a customer router at the on-premises side. 
