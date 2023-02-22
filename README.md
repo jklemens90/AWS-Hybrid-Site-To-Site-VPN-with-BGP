@@ -1,4 +1,4 @@
-This was a project where I implemented a highly available and dynamic network connectivity between AWS and on-premises routers by establishing two Site-to-Site VPN connections and using BGP dynamic routing.
+This was a project where I implemented highly available and dynamic network connectivity between AWS and on-premises routers by establishing two Site-to-Site VPN connections and using BGP dynamic routing.
 
 The end state architecture looked like this:
 ![image](https://user-images.githubusercontent.com/95970840/220499900-4f7701b8-cb77-40f9-8565-f9a78a0ddbd6.png)
