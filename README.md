@@ -21,12 +21,14 @@ Below are pictures and proof that the IPsec tunnels were established correctly:
 
 On-Premise Router 1-
 ![onpremrouter 1 final route table](https://user-images.githubusercontent.com/95970840/220513969-13379fb0-4e1d-421d-b51c-3ce442693daa.png)
+
 "C" next to an IP address means it's a route that is connected to this particular operating system.
 "B" next to an IP address means it's a BGP-learned route. 
 10.16.0.0/16 (AWS) was learned via both vti1 and vti2 (IPsec tunnels). 
 
 On-Premise Router 2- 
 ![onpremrouter 2 final route table](https://user-images.githubusercontent.com/95970840/220514477-8fa02717-ca2f-452f-929e-b6ab8dfe3623.png)
+
 10.16.0.0/16 (AWS) was learned via both vti1 and vti2 (IPsec tunnels) in this scenario as well. 
 
 On-premise to EC2-A ping response
